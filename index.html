@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Markdown Previewer</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>📝 Markdown Previewer</h1>
+            </div>
+            <div class="main">
+                <div class="editor-pane">
+                    <div class="pane-header">Editor</div>
+                    <textarea id="editor"
+                        placeholder="Start typing your markdown here..."># Welcome to Markdown Previewer
+
+## Features
+- **Live preview** as you type
+- Support for all common markdown syntax
+- Clean, modern interface
+
+### Try it out!
+
+Type some markdown on the left and see it rendered on the right.
+
+#### Lists
+- Item 1
+- Item 2
+- Item 3
+
+#### Code
+Inline `code` looks like this.
+
+```javascript
+function hello() {
+  console.log("Hello, world!");
+}
+```
+
+#### Quotes
+> "The best way to predict the future is to invent it."
+> - Alan Kay
+
+---
+
+**Bold** and *italic* text work too!
+
+[Links work great](https://example.com)</textarea>
+                </div>
+                <div class="preview-pane">
+                    <div class="pane-header">Preview</div>
+                    <div id="preview"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
